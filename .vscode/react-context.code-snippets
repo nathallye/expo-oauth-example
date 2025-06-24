@@ -1,0 +1,21 @@
+{
+  "React Context": {
+    "prefix": "react_context",
+    "body": [
+      "import React from 'react';",
+      "",
+      "interface ${CLIPBOARD}ContextProps {};",
+      "",
+      "export const ${CLIPBOARD}Context = React.createContext<${CLIPBOARD}ContextProps>({});",
+      "",
+      "interface ${CLIPBOARD}ProviderProps {",
+      "  children: React.ReactNode;",
+      "};",
+      "",
+      "export const ${CLIPBOARD}Provider = ({ children }: ${CLIPBOARD}ProviderProps) => {",
+      "  return <${CLIPBOARD}Context.Provider value={{}}>{children}</${CLIPBOARD}Context.Provider>;",
+      "};",
+    ],
+    "description": "Generate a react context skeleton",
+  },
+}
