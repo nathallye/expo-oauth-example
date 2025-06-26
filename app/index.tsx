@@ -30,7 +30,13 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>{JSON.stringify(user)}</Text>
+      <View
+        style={{ margin: 20, padding: 10, borderWidth: 1, borderColor: "#ccc" }}
+      >
+        <Text>{user.id}</Text>
+        <Text>{user.name}</Text>
+        <Text>{user.email}</Text>
+      </View>
       <Button title="Sign Out" onPress={() => signOut()} />
     </View>
   );
